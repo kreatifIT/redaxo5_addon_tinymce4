@@ -22,7 +22,7 @@ if (rex::isBackend() && isset($_REQUEST['page']) && !isset($_REQUEST['_pjax'])) 
         $service_container = Tinymce4\Services\ServiceContainer::getInstance();
         $map = $service_container->getParameter('be_lang_map');
         if (!isset($map[$lang])) {
-            $lang_pack = 'en_US';
+            $lang_pack = 'en_gb';
         } else {
             $lang_pack = $map[$lang];
         } 
